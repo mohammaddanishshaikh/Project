@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wraper
+{
+    height: 100vh;
+    overflow-x:hidden;
+    overflow-y:auto ;
+    perspective: 10px;
+    
+}
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    height: 100%;
+    transform-style:preserve-3d ;
+    z-index: -1;
+}
+.background
+{
+    transform: translateZ(-40px);
+    scale: 5;
+}
+.foreground
+{
+    transform: translateZ(-20px);
+    scale: 3;
+}
+.background ,.foreground
+{
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.bg
+{
+     /* width: 100%;
+     */
+     /* height: 40rem; */
+     background-attachment: fixed;
+}
+.bg1
+{
+    height: 400px;
+    width: 100%;
+    background-image: url(image1.jpg);
+    /* object-fit: cover; */
+}
+.bg2
+{
+    height: 400px;
+    width: 100%;
+    background-image: url(image2.jpg);
+    object-fit: cover;
+}
+.bg3
+{
+    height: 400px;
+    width: 100%;
+    background-image: url(imag4.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
